@@ -44,7 +44,7 @@ export const KaraokeTool: React.FC = () => {
         </div>
       </div>
 
-      <div className="p-8 space-y-8 text-left font-sans">
+      <div className="p-8 space-y-8 text-left font-sans text-slate-100">
         <p className="text-slate-400 text-sm">
            Upload a song to strip vocals and upload the instrumental to your YouTube karaoke channel.
         </p>

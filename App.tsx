@@ -79,7 +79,6 @@ const App: React.FC = () => {
         
         <div className="mb-12">
             <h2 className="text-2xl font-bold text-center mb-8 text-slate-400 font-sans tracking-tight">Select a Simulation Module</h2>
-            {/* auto-rows-fr forces cards to the same height */}
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 auto-rows-fr">
                 {tabs.map((tab) => {
                     const Icon = tab.icon;
@@ -90,7 +89,7 @@ const App: React.FC = () => {
                         onClick={() => setActiveTab(tab.id as TabId)}
                         className={`
                             group relative flex flex-col justify-between items-center p-6 rounded-2xl transition-all duration-300
-                            backdrop-blur-md overflow-hidden shadow-lg h-full
+                            backdrop-blur-md overflow-hidden shadow-lg h-full w-full
                             ${isActive 
                             ? 'bg-white/20 border border-white/50 scale-105 ring-2 ring-white shadow-white/10' 
                             : 'bg-white/10 border border-white/20 hover:bg-white/20 hover:border-white/40 hover:scale-105 hover:shadow-xl'
@@ -109,13 +108,13 @@ const App: React.FC = () => {
 
                 <button
                     onClick={() => setShowSyllabus(true)}
-                    className="group relative flex flex-col justify-between items-center p-6 rounded-2xl transition-all duration-300 backdrop-blur-md border border-white/20 bg-white/10 shadow-lg hover:bg-white/20 hover:border-white/40 hover:scale-105 hover:shadow-xl hover:brightness-110 h-full"
+                    className="group relative flex flex-col justify-between items-center p-6 rounded-2xl transition-all duration-300 backdrop-blur-md border border-white/20 bg-white/10 shadow-lg hover:bg-white/20 hover:border-white/40 hover:scale-105 hover:shadow-xl hover:brightness-110 h-full w-full"
                 >
                      <div className="flex-1 flex items-center justify-center w-full">
                         <Gavel size={32} className="text-slate-300 group-hover:text-white transition-colors duration-300" />
                      </div>
                      <span className="text-[10px] leading-tight font-bold uppercase tracking-wider text-center text-white transition-colors duration-300 mt-4">
-                        Made for Brad Rosen<br/>Yale Law, Technology, & Culture
+                        Yale Law, Technology, & Culture<br/>Fall 2025 Syllabus
                      </span>
                 </button>
             </div>

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-/* Fixed: Aliased Image as ImageIcon to match usage below */
 import { Smartphone, Unlock, Image as ImageIcon, MessageSquare } from 'lucide-react';
 import { Button } from './ui/Button';
 import { InterceptModal } from './InterceptModal';
@@ -30,7 +29,7 @@ export const UnlockTool: React.FC = () => {
   };
 
   return (
-    <div className="w-full max-w-2xl mx-auto bg-slate-200 rounded-xl border border-slate-300 shadow-xl p-8 relative font-sans text-left">
+    <div className="w-full max-w-2xl mx-auto bg-slate-200 rounded-xl border border-slate-300 shadow-xl p-8 relative font-sans text-left text-slate-900">
        <div className="flex space-x-8">
           <div className="w-1/3 bg-black rounded-[2rem] p-3 shadow-2xl ring-4 ring-slate-300">
               <div className="h-64 bg-slate-900 rounded-[1.5rem] flex flex-col items-center justify-center relative overflow-hidden">
@@ -74,7 +73,7 @@ export const UnlockTool: React.FC = () => {
         onClose={reset}
         title="Access Denied"
         hook="Bypassing technical safeguards on a device you do not own violates federal privacy standards."
-        analysis="<strong>Topic: Search/Seizure</strong><br><br>By breaching the lock screen and bypassing password protection, you risk violating one’s reasonable right to privacy through circumventing technical safeguards. The Supreme Court has established that modern cellphones contain the “Privacies of life” and that to access their contents, one requires lawful authorization Riley v. California, 573 U.S. 373 (2014). Without permission, you trigger the Computer Fraud and Abuse Act, which prohibits accessing a computer without authorization or by bypassing access controls U.S. v. Morris, 928 F.2d 504 (2d Cir. (1991); U.S. v. Nosal, 676 f.3d 854 (9th Cir. 2012). While passwords might seem like a minor obstacle before accessing a phone, they are the embodiment of an expectation to privacy."
+        analysis="<strong>Topic: Search/Seizure</strong><br><br>By breaching the lock screen and bypassing password protection, you risk violating one’s reasonable right to privacy through circumventing technical safeguards. The Supreme Court has established that modern cellphones contain the “Privacies of life” and that to access their contents, one requires lawful authorization Riley v. California, 573 U.S. 373 (2014). Without permission, you trigger the Computer Fraud and Abuse Act, which prohibits accessing a computer without authorization or by bypassing access controls U.S. v. Morris, 928 F.2d 504 (2d Cir. (1991); U.S. v. Nosal, 676 F.3d 854 (9th Cir. 2012). While passwords might seem like a minor obstacle before accessing a phone, they are the embodiment of an expectation to privacy."
       />
     </div>
   );

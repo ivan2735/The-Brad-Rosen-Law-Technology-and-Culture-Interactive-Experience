@@ -39,7 +39,7 @@ export const MemeTool: React.FC = () => {
                 <input 
                   type="text" 
                   defaultValue="WHEN YOU REALIZE" 
-                  className="w-full bg-slate-50 border border-slate-300 p-2 rounded text-sm font-bold uppercase text-slate-900 focus:ring-2 focus:ring-yellow-500 focus:outline-none shadow-sm" 
+                  className="w-full bg-white border border-slate-300 p-2 rounded text-sm font-bold uppercase text-slate-900 focus:ring-2 focus:ring-yellow-500 focus:outline-none shadow-sm" 
                 />
             </div>
              <div className="space-y-1">
@@ -47,7 +47,7 @@ export const MemeTool: React.FC = () => {
                 <input 
                   type="text" 
                   defaultValue="IT'S COPYRIGHTED" 
-                  className="w-full bg-slate-50 border border-slate-300 p-2 rounded text-sm font-bold uppercase text-slate-900 focus:ring-2 focus:ring-yellow-500 focus:outline-none shadow-sm" 
+                  className="w-full bg-white border border-slate-300 p-2 rounded text-sm font-bold uppercase text-slate-900 focus:ring-2 focus:ring-yellow-500 focus:outline-none shadow-sm" 
                 />
             </div>
          </div>
@@ -55,7 +55,7 @@ export const MemeTool: React.FC = () => {
          <div className="p-6 bg-slate-50 flex flex-col items-center justify-center space-y-4">
              <div className="relative aspect-square w-full bg-slate-800 rounded shadow-lg overflow-hidden border border-slate-200">
                  <img src="https://picsum.photos/seed/meme/400/400" className="opacity-80 object-cover w-full h-full" alt="meme base" />
-                 {/* Standard Sans-Serif font in preview as requested */}
+                 {/* Standard sans-serif font used for preview as requested */}
                  <div className="absolute top-4 left-0 right-0 text-center text-white font-sans font-black text-xl px-2 drop-shadow-lg uppercase tracking-wide">WHEN YOU REALIZE</div>
                  <div className="absolute bottom-4 left-0 right-0 text-center text-white font-sans font-black text-xl px-2 drop-shadow-lg uppercase tracking-wide">IT'S COPYRIGHTED</div>
                  {status === SimulationStatus.PROCESSING && (

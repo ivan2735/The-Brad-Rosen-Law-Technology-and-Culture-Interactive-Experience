@@ -52,27 +52,28 @@ export const InterceptModal: React.FC<InterceptModalProps> = ({ isOpen, onClose,
         <div className="p-8 overflow-y-auto custom-scrollbar">
           
           {/* Main Title */}
-          <h2 className="text-3xl font-black text-white mb-6 uppercase tracking-tight flex items-center gap-3">
+          <h2 className="text-3xl font-black text-white mb-6 uppercase tracking-tight flex items-center gap-3 text-left">
              <Gavel className="text-red-600" size={32} />
              {title}
           </h2>
 
           {/* The Hook */}
-          <div className="bg-red-500/10 border-l-4 border-red-500 p-6 mb-8 rounded-r-lg">
-             <p className="text-xl font-bold text-red-200 leading-relaxed text-left">
+          <div className="bg-red-500/10 border-l-4 border-red-500 p-6 mb-8 rounded-r-lg text-left">
+             <p className="text-xl font-bold text-red-200 leading-relaxed">
                {hook}
              </p>
           </div>
 
           {/* Legal Analysis */}
           <div className="space-y-3">
-             <div className="flex items-center space-x-2 text-tech-accent mb-2">
+             <div className="flex items-center space-x-2 text-tech-accent mb-2 justify-start">
                 <Scale size={18} />
                 <span className="text-xs font-mono font-bold uppercase tracking-widest">Legal Analysis</span>
              </div>
-             <div className="bg-slate-900/80 rounded-lg p-6 border border-slate-700/50 shadow-inner">
+             <div className="bg-slate-900/80 rounded-lg p-6 border border-slate-700/50 shadow-inner text-left">
                 <div 
                   className="font-mono text-sm text-slate-300 leading-7 text-left"
+                  style={{ textAlign: 'left' }}
                   dangerouslySetInnerHTML={{ __html: analysis }}
                 />
              </div>

@@ -30,7 +30,7 @@ export const NetNeutralityTool: React.FC = () => {
   };
 
   return (
-    <div className="w-full max-w-2xl mx-auto bg-[#111] rounded-xl border border-slate-800 shadow-2xl p-8 text-center relative overflow-hidden font-sans text-left">
+    <div className="w-full max-w-2xl mx-auto bg-[#111] rounded-xl border border-slate-800 shadow-2xl p-8 text-center relative overflow-hidden font-sans text-left text-slate-100">
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-red-500 via-yellow-500 to-green-500"></div>
       
       <div className="mb-8 text-center">
@@ -39,7 +39,7 @@ export const NetNeutralityTool: React.FC = () => {
       </div>
 
       <div className="bg-orange-500/10 border border-orange-500/20 rounded-lg p-4 mb-8 text-sm text-orange-200 leading-relaxed font-medium text-left">
-        Activate exclusive deal with ISP to throttle competitor traffic and boost ours.
+        Activate exclusive deal with your ISP to throttle competing traffic and boost your own.
       </div>
 
       <div className="relative w-64 h-32 mx-auto mb-8 overflow-hidden">
@@ -80,7 +80,7 @@ export const NetNeutralityTool: React.FC = () => {
         onClose={reset}
         title="Net Neutrality Overview"
         hook="Know your rights! Internet service providers must treat all data equally, without blocking or throttling content."
-        analysis="<strong>Topic: Net Neutrality</strong><br><br>Know your rights! Net Neutrality is the theory that internet service providers must treat all data equally, without blocking or throttling content for specific users for payment. Net Neutrality used to be protected federally under a Title II classification, but in Mozilla v. FCC, 940 f.3d 1 (D.C. Cir. 2019), the courts decided to repeal this federal classification and instead left it up to the states to enact their own net neutrality protections, meaning your rights now depend on where you live. Some states, like California, New York, ect. Have restored net neutrality rules, while others have not. Before paying for prioritization tools, please confirm whether or not net neutrality is protected in your state; do not let service providers violate your rights!"
+        analysis="<strong>Topic: Net Neutrality</strong><br><br>Know your rights! Net Neutrality is the theory that internet service providers must treat all data equally, without blocking or throttling content for specific users for payment. Net Neutrality used to be protected federally under a Title II classification, but in Mozilla v. FCC, 940 F.3d 1 (D.C. Cir. 2019), the courts decided to repeal this federal classification and instead left it up to the states to enact their own net neutrality protections, meaning your rights now depend on where you live. Some states, like California, New York, ect. Have restored net neutrality rules, while others have not. Before paying for prioritization tools, please confirm whether or not net neutrality is protected in your state; do not let service providers violate your rights!"
       />
     </div>
   );

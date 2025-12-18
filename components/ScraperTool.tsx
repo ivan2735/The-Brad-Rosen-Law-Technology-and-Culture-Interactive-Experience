@@ -54,7 +54,7 @@ export const ScraperTool: React.FC = () => {
           </div>
        </div>
 
-       <div className="p-6 space-y-6 text-left font-sans">
+       <div className="p-6 space-y-6 text-left font-sans text-slate-100">
           <p className="text-slate-400 text-sm leading-relaxed">
             Search for custom, curated opinion lists based on creative weighting of factual metrics to republish on your monetized blog.
           </p>
@@ -72,7 +72,7 @@ export const ScraperTool: React.FC = () => {
           {status !== SimulationStatus.IDLE && (
               <div className="bg-black p-4 rounded border border-slate-800 h-40 overflow-hidden flex flex-col-reverse shadow-inner font-mono">
                  {logs.map((log, i) => (
-                     <div key={i} className="text-xs text-green-500">
+                     <div key={i} className="text-xs text-green-500 text-left">
                         <span className="text-slate-600 mr-2">{`>`}</span>
                         {log}
                      </div>

@@ -30,7 +30,7 @@ export const ThreatTool: React.FC = () => {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-slate-800 rounded-b-xl z-10"></div>
       
       <div className="bg-slate-900 pt-10 pb-4 px-6 border-b border-slate-800 flex flex-col items-center">
-         <div className="w-12 h-12 bg-slate-700 rounded-full flex items-center justify-center mb-2">
+         <div className="w-12 h-12 bg-slate-700 rounded-full flex items-center justify-center mb-2 text-slate-100">
             <User className="text-slate-400" />
          </div>
          <span className="text-slate-200 font-medium tracking-tight">Ex-Partner</span>
